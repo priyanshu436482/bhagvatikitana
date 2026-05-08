@@ -1,0 +1,21 @@
+.add-product {
+  background: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.add-product input {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 300px;
+}
+
+.add-product button {
+  padding: 10px 20px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}

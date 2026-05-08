@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  background-image: url("./image/bg.webp");
+  background-size: cover;        /* Cover full screen */
+  background-position: center;   /* Center image */
+  background-repeat: no-repeat;
+  background-attachment: fixed;  /* This makes it FIXED */
+}

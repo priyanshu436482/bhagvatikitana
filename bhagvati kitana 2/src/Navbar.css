@@ -1,0 +1,43 @@
+.navbar {
+  min-height: 70px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: #2b8f32 ;
+  color: #FF9800;
+}
+
+/* Search */
+.navbar-search {
+  width: 100%;
+  max-width: 500px;
+}
+
+.navbar-search .form-control {
+  border-radius: 30px;
+  padding: 10px 18px;
+  border: none;
+}
+
+/* Buttons */
+.navbar-actions button {
+  border-radius: 25px;
+  padding: 8px 14px;
+}
+
+/* Mobile fixes */
+@media (max-width: 991px) {
+  .navbar-search {
+    max-width: 100%;
+  }
+
+  .navbar-actions {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+.container-fluid a img{
+ 
+    /* height: 50px; */
+    width: 110px;
+
+
+} 

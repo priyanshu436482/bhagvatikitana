@@ -1,0 +1,92 @@
+/* Page Background */
+.order-page {
+  padding: 50px 20px;
+  background: #f4f6f9;
+  min-height: 80vh;
+}
+
+/* Title */
+.order-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Main Container */
+.order-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Cards */
+.order-summary,
+.order-form {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 320px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.order-summary:hover,
+.order-form:hover {
+  transform: translateY(-5px);
+}
+
+/* Order Items */
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+  font-size: 15px;
+}
+
+/* Total Section */
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-top: 15px;
+  color: #28a745;
+}
+
+/* Form Styling */
+.order-form input,
+.order-form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.order-form input:focus,
+.order-form textarea:focus {
+  border-color: #28a745;
+}
+
+/* Button */
+.order-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.order-btn:hover {
+  background: #218838;
+}
