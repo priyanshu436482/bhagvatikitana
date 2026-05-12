@@ -9,7 +9,6 @@ import Location from "./Location";
 import Order from "./Order";
 import Service from "./Service";
 import About from "./About";
-import Signin from "./Signin";
 import Cart from "./Cart";
 import ProductDetails from "./ProductDetails";
 
@@ -112,7 +111,6 @@ function App() {
         <Route path="/location" element={<Location />} />
         <Route path="/about" element={<About />} />
         <Route path="/service" element={<Service />} />
-        <Route path="/signin" element={<Signin />} />
                 </Routes>
                 <ContactUs />
               </>

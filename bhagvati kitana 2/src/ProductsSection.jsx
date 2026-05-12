@@ -10,10 +10,16 @@ function ProductsSection({ searchTerm, addToCart }) {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
+        console.log("Fetching products from:", api.defaults.baseURL + 'products/');
         const response = await api.get('products/');
+        console.log("Products received:", response.data);
         setProducts(response.data);
       } catch (error) {
         console.error("Failed to fetch products", error);
+        if (error.response) {
+          console.error("Error status:", error.response.status);
+          console.error("Error data:", error.response.data);
+        }
       } finally {
         setLoading(false);
       }

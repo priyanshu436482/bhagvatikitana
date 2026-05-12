@@ -107,7 +107,13 @@ export default function Products() {
       setShowModal(false);
       fetchProducts();
     } catch (error) {
-      toast.error(isEditing ? 'Failed to update product' : 'Failed to add product');
+      console.error('Error details:', error.response?.data || error.message);
+      const errorMessage = error.response?.data?.detail || 
+                         (error.response?.data && typeof error.response.data === 'object' ? 
+                          Object.entries(error.response.data).map(([key, val]) => `${key}: ${val}`).join(', ') : 
+                          null) || 
+                         'Failed to process product';
+      toast.error(errorMessage);
     }
   };
 

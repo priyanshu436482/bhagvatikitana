@@ -50,10 +50,6 @@ function Navbar({ searchTerm, setSearchTerm, cartCount }) {
               )}
             </Link>
 
-            <Link to="/signin" className="btn btn-outline-light">
-              Sign In
-            </Link>
-            
             <Link to="/admin/login" className="btn btn-warning">
               Admin Login
             </Link>
