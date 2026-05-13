@@ -91,6 +91,11 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
+# Vercel serverless: filesystem is read-only except /tmp; default DB sessions hit SQLite/Postgres
+# on every request. Cookie sessions avoid DB I/O for anonymous traffic (fixes 500 on "/").
+if os.environ.get('VERCEL'):
+    SESSION_ENGINE = 'django.contrib.sessions.backends.signed_cookies'
+
 
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
