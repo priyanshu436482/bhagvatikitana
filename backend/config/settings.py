@@ -171,6 +171,9 @@ CSRF_TRUSTED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
 ]
+# Production frontend (e.g. https://your-app.vercel.app) — set in Vercel env vars
+if _front := os.getenv("FRONTEND_URL", "").strip():
+    CSRF_TRUSTED_ORIGINS = [*CSRF_TRUSTED_ORIGINS, _front]
 
 # DRF Configuration
 REST_FRAMEWORK = {
