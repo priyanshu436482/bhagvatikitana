@@ -156,9 +156,12 @@ STORAGES = {
         "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
     },
     "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
     },
 }
+
+# Needed for django-cloudinary-storage collectstatic on Django 5+ (STORAGES-only configs).
+STATICFILES_STORAGE = STORAGES["staticfiles"]["BACKEND"]
 
 # CORS Configuration
 CORS_ALLOW_ALL_ORIGINS = True
